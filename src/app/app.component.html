@@ -1,23 +1,41 @@
-<!--The content below is only a placeholder and should be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="https://qwikbox.s3.amazonaws.com/qwikcut-store-listing-logo.png">
+<div class="logoContainer centering">
+  <img height="75" alt="QwikCut Logo" src="https://qwikbox.s3.amazonaws.com/qwikcut-store-listing-logo.png">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://qwikcut.com">QwikCut Website</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="pageTitleContainer centering">
+  <div class="centering">
+    <h1 class="pageTitle">
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  
+   <div>
+    <div class="clipTitleBar">
+      <h1>ClipNumber: {{clips[currentClip].clipnumber}}</h1>
+      <p>
+        <strong>Personnel:</strong> {{clips[currentClip].personnel}}<br>
+        <strong>Down:</strong> {{clips[currentClip].down}}<br>
+        <strong>Distance:</strong> {{clips[currentClip].distance}}
+      </p>
+    </div>
+    <app-player
+      [clip]="clips[currentClip]"
+      [nextClip]="nextClip.bind(this)"
+      [prevClip]="prevClip.bind(this)"
+      [playNextClip]="playNextClip.bind(this)"
+    >
+    </app-player>
+    <div class="clipLibraryContainer">
+      <h3>Clip Library</h3>
+      <div class="clipLibraryScrollContainer">
+        <div *ngFor="let clip of clips">
+          <div class="clipLibraryItem" (click)="selectClip(clip.clipnumber)" [style.background-color]="((currentClip + 1) == clip.clipnumber) ? 'darkgreen' : 'darkblue'">
+            Clip: {{clip.clipnumber}} <br>
+            Personnel: {{clip.personnel}} <br>
+            Down: {{clip.down}} <br>
+            Distance: {{clip.distance}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="clipContainer">
+  <div>  
+    <video autoplay [src]="clip.url" width="100%" #myVideo></video>
+    <div class="clipControlContainer">
+      <div class="clipSeekContainer">
+        <input class="seekBar" type="range" value="0" #seekBar>
+      </div>
+      <div class="clipButtonControlContainer">
+        <button class="clipControlButton" (click)="prevClip()">Prev Clip</button>
+        <button class="clipControlButton" (click)="play()">{{(playing) ? "Pause" : "Play"}}</button>
+        <button class="clipControlButton" (click)="toggleMute()">Turn Sound {{(muted) ? "On" : "Off"}}</button>
+        <button class="clipControlButton" (click)="nextClip()">Next Clip</button>
+      </div>
+    </div>
+  </div>
+</div>

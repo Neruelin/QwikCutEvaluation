@@ -1,0 +1,78 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin: 0 -1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.logoContainer {
+  background-color: white; 
+  margin: 0; 
+  padding: 0;
+}
+
+.pageTitleContainer {
+  margin: 0 2%; 
+  padding: 10px 2%; 
+  min-height: calc(100vh - 75px); 
+  background-color: grey; 
+  max-width: 900px; 
+  margin-left: calc((100% - 900px) / 2);
+}
+
+.centering {
+  text-align:center; 
+}
+
+.pageTitle {
+  margin: 0; 
+  color: white;
+}
+
+.clipTitleBar {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.clipLibraryContainer {
+  padding: 10px 0;
+}
+
+.clipLibraryContainer > h3 {
+  margin: 0 0 5px 5px; 
+  font-family: sans-serif; 
+  color: white;
+}
+
+.clipLibraryScrollContainer {
+  display: flex; 
+  overflow-x: scroll; 
+  background-color: black; 
+  border-left: 1px solid black; 
+  border-right: 1px solid black;
+}
+
+.clipLibraryItem {
+  width: 160px; 
+  height: 90px; 
+  margin: 10px; 
+  display: inline-block; 
+  padding: 2px; 
+  border: 1px solid black; 
+  color: white; 
+  font-family: sans-serif;
+}
