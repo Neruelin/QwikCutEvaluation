@@ -1,27 +1,20 @@
 # QwikcutEvaluation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+Part of a coding evaluation process for a QwikCut interview.
 
-## Development server
+## Objectives:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Include a video player on the page and allow the user to play any of the clips whenever they want.
+2. A play/pause button and a seek bar need to be included in the video player.
+3. The information for each clip needs to be displayed at all times so that the user can easily find the clips they want to watch.
+4. There needs to be some kind of indication showing which clip is currently playing.
+5. When a clip ends, the next one plays. When the last clip ends, the video pauses and nothing else plays.
 
-## Code scaffolding
+## My extra customizations:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Restyling of the website to colors observed from the Company Logo.
+2. Page built from a composition of abstracted components rather than a single massive component. Also showcases passing event handlers and data between components.
+3. Addition of a sound on/off toggle.
+4. Addition of a side-scrollable clip library container.
+5. Addition of conditional style on the clip library items indicating the currently active clip.
+6. Addition of on hover styles to increase usability of clip controls.

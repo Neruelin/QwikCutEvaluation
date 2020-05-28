@@ -76,3 +76,8 @@
   color: white; 
   font-family: sans-serif;
 }
+
+.clipLibraryItem:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}

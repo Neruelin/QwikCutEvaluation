@@ -23,6 +23,10 @@
   width: 100%;
 }
 
+.seekBar:hover {
+  cursor: pointer;
+}
+
 .clipButtonControlContainer {
   display: flex; 
   justify-content: space-around; 
@@ -33,4 +37,8 @@
   font-size: 18px; 
   width: 100px; 
   height: 50px;
+}
+
+.clipControlButton:hover {
+  cursor: pointer;
 }
