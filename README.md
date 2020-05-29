@@ -18,3 +18,4 @@ Part of a coding evaluation process for a QwikCut interview.
 4. Addition of a side-scrollable clip library container.
 5. Addition of conditional style on the clip library items indicating the currently active clip.
 6. Addition of on hover styles to increase usability of clip controls.
+7. Next Clip and Prev Clip will wrap selected clip from the last clip to the first and when on the first clip the prev will wrap to the last clip.
